@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mart</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div>
+    <h1 style="color: rgb(208, 7, 7); font-weight: bolder;font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;">The Mart</h1>
+  </div>
+    <div class="container px-5 py-24 mx-auto">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="#" onclick="filterProducts('all')">All Products</a></li>
+          <li><a href="#" onclick="filterProducts('men')">Men's Clothing</a></li>
+          <li><a href="#" onclick="filterProducts('women')">Women's Clothing</a></li>
+          <li><a href="#" onclick="filterProducts('electronics')">Electronics</a></li>
+          <li><a href="#" onclick="filterProducts('jewelery')">Jewelery</a></li>
+        </ul>
+      </nav>
+        <div class="flex flex-wrap -m-4" id="all-products" style="color: rgb(4, 172, 4); border-radius: 5px;">
+          <!-- <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+              <p class="mt-1">$16.00</p>
+            </div>
+          </div> -->
+          </div>
+            <!-- Cart -->
+    <div class="cart">
+      <p>Cart: <span id="cart-number">0</span></p>
+    </div>
+  </div>
+          </div>
+          
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
