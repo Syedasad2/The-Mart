@@ -218,8 +218,7 @@ var cartItems = [];
 
 // Function to render products based on category
 function renderProducts(productsToShow) {
-  allProductsContainer.innerHTML = ""; //<= Clear previous products
-
+  allProductsContainer.innerHTML = ""; 
   productsToShow.forEach(function (product) {
     var isInCart = cartItems.some((item) => item.id === product.id);
 
@@ -268,7 +267,7 @@ function addToCart(productId) {
     cartItems.push(product);
     cartNumber.innerText = cartItems.length;
     renderProducts(products); // Render all products again
-    alert(`Added "${product.title}" to cart!`);
+    // alert(`Added "${product.title}" to cart!`);
   }
 }
 
@@ -276,8 +275,8 @@ function addToCart(productId) {
 function removeFromCart(productId) {
   cartItems = cartItems.filter((item) => item.id !== productId);
   cartNumber.innerText = cartItems.length;
-  renderProducts(products); // Render all products again
+  renderProducts(products); 
 }
 
-// Initial products rendering
+
 renderProducts(products);
